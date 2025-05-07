@@ -12,7 +12,7 @@
         
         <form id="formulario-asesor" action="Back/procesar_asesor.php" method="POST">
             <label>
-                Código de Estudiante:
+                Código UDG:
                 <input type="text" name="codigo_estudiante" required placeholder="Ej: A12345">
             </label>
             
@@ -22,7 +22,7 @@
             </label>
             
             <label>
-                Carrera:
+                Licenciatura:
                 <?php 
                     include("back/listadocarreras.php");
                 ?>
