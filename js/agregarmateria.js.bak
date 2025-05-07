@@ -1,0 +1,31 @@
+  
+        let idsSeleccionados = [];
+
+        function agregarMateria() {
+            const select = document.getElementById("materia");
+            const id = select.value;
+            const nombre = select.options[select.selectedIndex].text;
+
+            if (id === "") {
+                alert("Selecciona una materia válida.");
+                return;
+            }
+
+            // Evitar duplicados
+            if (idsSeleccionados.includes(id)) {
+                alert("La materia ya fue agregada.");
+                return;
+            }
+
+            // Agregar al arreglo de IDs
+            idsSeleccionados.push(id);
+
+            // Actualizar campo oculto con los IDs separados por coma
+            document.getElementById("materias_seleccionadas").value = idsSeleccionados.join(",");
+
+            // Mostrar en lista
+            const li = document.createElement("li");
+            li.textContent = nombre + " (ID: " + id + ")";
+            document.getElementById("listaMaterias").appendChild(li);
+        }
+   
