@@ -24,7 +24,7 @@
             <label>
                 Carrera:
                 <?php 
-                      include("back/listadocarreras.php");
+                    include("back/listadocarreras.php");
                 ?>
             </label>
             
@@ -42,15 +42,15 @@
             <fieldset>
                 <legend>Materias que puede asesorar:</legend>
                 <?php 
-                      include("back/listadomaterias.php");
+                    include("back/listadomaterias.php");
                 ?>
             </fieldset>
 			<button type="button" onclick="agregarMateria()">Agregar Materia</button>
-             <h3>Materias seleccionadas:</h3>
-               <ul id="listaMaterias"></ul>
+            <h3>Materias seleccionadas:</h3>
+            <ul id="listaMaterias"></ul>
 
-               <!-- Campo oculto para enviar los IDs -->
-               <input type="hidden" name="materias_seleccionadas" id="materias_seleccionadas">
+            <!-- Campo oculto para enviar los IDs -->
+            <input type="hidden" name="materias_seleccionadas" id="materias_seleccionadas">
             <table>
                 <thead>
                 <tr>
