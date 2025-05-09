@@ -3,9 +3,9 @@
 
 
 
-$host = "localhost";
+$host = "mysql.railway.internal";
 $usuario = "root";
-$contrasena = ""; // Ajusta según tu configuración
-$base_datos = "cid_cita";
+$contrasena = "MLBJGHlPhliCBjVcmskxSQOuqFVjXswc"; // Ajusta según tu configuración
+$base_datos = "railway";
 
 ?>
