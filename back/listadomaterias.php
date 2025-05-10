@@ -1,6 +1,6 @@
 <?php
 
-include ("conectarBD.php");
+include ("conectarbd.php");
 // Crear conexión
 $conn = new mysqli($host, $usuario, $contrasena, $base_datos);
 
