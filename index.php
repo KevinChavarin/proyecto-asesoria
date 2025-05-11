@@ -10,7 +10,7 @@
     <main class="container">
         <h1>Registro de Asesores</h1>
         
-        <form id="formulario-asesor" action="Back/procesar_asesor.php" method="POST">
+        <form id="formulario-asesor" action="./back/procesar_asesor.php" method="POST">
             <label>
                 Código UDG:
                 <input type="number" name="codigo_estudiante" required placeholder="Ej: A12345">
@@ -24,7 +24,7 @@
             <label>
                 Licenciatura:
                 <?php 
-                    include("back/listadocarreras.php");
+                    include("./back/listadocarreras.php");
                 ?>
             </label>
             
@@ -42,7 +42,7 @@
             <fieldset>
                 <legend>Materias que puede asesorar:</legend>
                 <?php 
-                    include("back/listadomaterias.php");
+                    include("./back/listadomaterias.php");
                 ?>
             </fieldset>
 			<button type="button" onclick="agregarMateria()">Agregar Materia</button>
@@ -194,7 +194,7 @@
         </form>
     </main>
 
-    <script src="js/script.js"></script>
-	<script src="js/agregarmateria.js"></script>
+    <script src="./js/script.js"></script>
+	<script src="./js/agregarmateria.js"></script>
 </body>
 </html> 

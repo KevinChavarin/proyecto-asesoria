@@ -1,10 +1,7 @@
 <?php
-$servername = "localhost";  
-$username = "root";         
-$password = "";             
-$dbname = "cid_cta";        
+include ("conectarbd.php");      
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $usuario, $contrasena, $base_datos);
 
 
 if ($conn->connect_error) {
