@@ -32,10 +32,10 @@
                 Periodo:
                 <select name="periodo" required>
                     <option value="">Seleccione un periodo</option>
-                    <option value="Enero-Abril 2024">Enero-Abril 2024</option>
-                    <option value="Mayo-Agosto 2024">Mayo-Agosto 2024</option>
-                    <option value="Agosto-Noviembre 2025-B">Agosto-Noviembre 2025-B</option>
-                    <option value="Enero-Mayo 2026-A">Enero-Mayo 2026-A</option>
+                    <option value="202410">2024A</option>
+                    <option value="202420">2024B</option>
+                    <option value="202480">2024V</option>
+                    <option value="202510">2025A</option>
                 </select>
             </label>
             
