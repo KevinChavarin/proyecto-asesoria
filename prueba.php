@@ -11,7 +11,7 @@
         <select id="materia">
             <option value="">-- Elige una materia --</option>
             <?php
-            // Suponiendo que ya hiciste la conexiÛn
+            // Suponiendo que ya hiciste la conexiÔøΩn
             $conexion = new mysqli("localhost", "root", "", "cid_cita");
             $sql = "SELECT materia_id, materia_nombre FROM cid_materia ORDER BY materia_nombre ASC";
             $resultado = $conexion->query($sql);
@@ -40,7 +40,7 @@
             const nombre = select.options[select.selectedIndex].text;
 
             if (id === "") {
-                alert("Selecciona una materia v·lida.");
+                alert("Selecciona una materia v√°lida.");
                 return;
             }
 

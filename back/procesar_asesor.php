@@ -1,4 +1,5 @@
 <?php
+
 include ("conectarbd.php");      
 
 $conn = new mysqli($host, $usuario, $contrasena, $base_datos);
@@ -44,7 +45,7 @@ if ($conn->query($sql) === TRUE) {
     // Redirigir a una página de éxito o mostrar mensaje
     echo "<script>
             alert('Registro exitoso');
-            window.location.href = './index.html';
+            window.location.href = './index.php';
         </script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
