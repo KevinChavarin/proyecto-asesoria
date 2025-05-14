@@ -45,7 +45,7 @@ if ($conn->query($sql) === TRUE) {
     // Redirigir a una página de éxito o mostrar mensaje
     echo "<script>
             alert('Registro exitoso');
-            window.location.href = './index.php';
+            window.location.href = '../index.php';
         </script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
