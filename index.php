@@ -28,7 +28,7 @@
 <body>
 
     <h1>Bienvenido</h1>
-    <form action="registro.php" method="get" style="display: inline;">
+    <form action="Registro.php" method="get" style="display: inline;">
         <button type="submit">Ir a Registro</button>
     </form>
 
