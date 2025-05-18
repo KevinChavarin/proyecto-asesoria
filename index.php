@@ -191,8 +191,9 @@
             </table>
             
             <button type="submit" class="btn">Registrar Asesor</button>
+            <a href="mostrarhorario.php" class="btn">Ver Horarios</a>
         </form>
-        <a href="mostrarhorario.php" class="btn">Ver Horarios</a>
+        
     </main>
 
     <script src="./js/script.js"></script>
