@@ -27,6 +27,7 @@
 </head>
 <body>
 
+    <h1>Asesorias CUCEA</h1>
     <h1>Bienvenido</h1>
     <form action="Registro.php" method="get" style="display: inline;">
         <button type="submit">Ir a Registro</button>
