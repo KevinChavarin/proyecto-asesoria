@@ -1,6 +1,6 @@
 <?php
-// Conexión a la base de datos (asegúrate de que $conn ya está definida en tu entorno)
-include ("back/conectarbd.php"); // Archivo con la conexión a la BD
+// Conexiï¿½n a la base de datos (asegï¿½rate de que $conn ya estï¿½ definida en tu entorno)
+include ("back/conectarbd.php"); // Archivo con la conexiï¿½n a la BD
 $conn = new mysqli($host, $usuario, $contrasena, $base_datos);
 
 
@@ -15,14 +15,14 @@ $query_materias = "
 ";
 $materias = $conn->query($query_materias);
 
-// Procesar selección de materia
+// Procesar selecciï¿½n de materia
 $horarios = [];
 $materia_seleccionada = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['materia_id'])) {
     $materia_id = $conn->real_escape_string($_POST['materia_id']);
     
-    // Obtener información de la materia seleccionada
+    // Obtener informaciï¿½n de la materia seleccionada
     $query_materia = "SELECT materia_nombre FROM cid_materia WHERE materia_id = $materia_id";
     $materia_seleccionada = $conn->query($query_materia)->fetch_assoc();
     
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['materia_id'])) {
         WHERE hma.hMateria_materia = $materia_id
         AND ha.horario_estatus = '1'
         ORDER BY 
-            FIELD(ha.horario_dia, 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'),
+            FIELD(ha.horario_dia, 'Lunes', 'Martes', 'Miï¿½rcoles', 'Jueves', 'Viernes', 'Sï¿½bado', 'Domingo'),
             ha.horario_hora
     ";
     
@@ -54,16 +54,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['materia_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Asesor&iacute;as Acad&eacute;micas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_index.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Sistema de Asesorías Acad&eacute;micas</h1>
+            <h1>Sistema de Asesorias Acad&eacute;micas</h1>
         </header>
 
         <main>
-            <!-- Formulario de selección de materia -->
+            <!-- Formulario de selecciï¿½n de materia -->
             <form method="POST" class="card">
                 <h2>1. Selecciona una materia</h2>
                 <select name="materia_id" class="form-select" required>
