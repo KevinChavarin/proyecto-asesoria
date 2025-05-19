@@ -194,6 +194,7 @@
         </form>
         
     </main>
+    <button onclick="window.location.href='./index.php'" class="btn">Volver al inicio</button>
 
     <script src="./js/script.js"></script>
 	<script src="./js/agregarmateria.js"></script>

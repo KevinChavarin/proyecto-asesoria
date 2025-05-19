@@ -9,13 +9,12 @@ if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
 
-// Consulta para obtener las carreras
+// Obtener las carreras
 $sql = "SELECT materia_id, materia_nombre FROM cid_materia ORDER BY materia_nombre ASC";
 $resultado = $conn->query($sql);
 
-// Mostrar el select
 echo '<select name="materia" id="materia">';
-echo '<option value="">Seleccione una carrera</option>'; // Opción por defecto
+echo '<option value="">Seleccione una carrera</option>';
 
 if ($resultado->num_rows > 0) {
     while($fila = $resultado->fetch_assoc()) {

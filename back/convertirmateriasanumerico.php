@@ -1,9 +1,9 @@
 
 
 <?php
-// Verificar si se recibió el campo
+// Verificar si se recibiÃ³ el campo
 if (!isset($_POST['materias_seleccionadas'])) {
-    die("Error: No se recibió el campo 'materias_seleccionadas'");
+    die("Error: No se recibiÃ³ el campo 'materias_seleccionadas'");
 }
 
 // Obtener y limpiar el string
@@ -16,7 +16,7 @@ $materias_numericas = array();
 foreach ($materias_array as $materia) {
     $materia_limpia = trim($materia);
     
-    // Validar que sea numérico y positivo
+    // Validar que sea numÃ©rico y positivo
     if (is_numeric($materia_limpia) && $materia_limpia > 0) {
         $materias_numericas[] = (int)$materia_limpia;
     }

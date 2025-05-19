@@ -27,12 +27,10 @@ if (isset($_POST['horarios'])) {
 }
 $horarios_str = implode(", ", $horarios);
 
-// Preparar y ejecutar la consulta SQL
 $sql = "INSERT INTO cid_asesor (asesor_codigo, asesor_nombre, asesor_idcarrera, asesor_periodo) 
         VALUES ('$codigo_estudiante', '$nombre', '$carrera', '$periodo')";
 
 if ($conn->query($sql) === TRUE) {
-    // Redirigir a una página de éxito o mostrar mensaje
 	
 	$asesor_id = $conn->insert_id;   // Obtengo el id del asesor insertado
     include ("convertirmateriasanumerico.php");

@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 100px;
-    background-color: #F0F0F0; /* Color hueso */
-    color: #002244; /* Azul oscuro para el texto */
+    background-color: #F0F0F0; 
+    color: #002244; 
 }
 
 h1 {
-    color: #004488; /* Azul más vibrante para los títulos */
+    color: #004488;
 }
 
 button {
@@ -17,13 +17,13 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    background-color: #4CAF50; /* Verde para los botones */
+    background-color: #4CAF50; 
     color: white;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+    background-color: #3b883f; 
     transform: scale(1.05);
 }
 

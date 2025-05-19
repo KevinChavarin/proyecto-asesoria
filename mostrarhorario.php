@@ -1,5 +1,5 @@
 <?php
-// Conexi�n a la base de datos (aseg�rate de que $conn ya est� definida en tu entorno)
+// Conexión a la base de datos
 include ("back/conectarbd.php"); // Archivo con la conexi�n a la BD
 $conn = new mysqli($host, $usuario, $contrasena, $base_datos);
 
@@ -15,14 +15,14 @@ $query_materias = "
 ";
 $materias = $conn->query($query_materias);
 
-// Procesar selecci�n de materia
+// Procesar selección de materia
 $horarios = [];
 $materia_seleccionada = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['materia_id'])) {
     $materia_id = $conn->real_escape_string($_POST['materia_id']);
     
-    // Obtener informaci�n de la materia seleccionada
+    // Obtener información de la materia seleccionada
     $query_materia = "SELECT materia_nombre FROM cid_materia WHERE materia_id = $materia_id";
     $materia_seleccionada = $conn->query($query_materia)->fetch_assoc();
     
@@ -110,5 +110,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['materia_id'])) {
             <?php endif; ?>
         </main>
     </div>
+    <button onclick="window.location.href='./index.php'" class="btn">Volver al inicio</button>
 </body>
 </html>
