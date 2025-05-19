@@ -1,92 +1,101 @@
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #0056b3;
     margin: 0;
     padding: 20px;
-    background-color: #3498db;
+    color: #002244;
 }
 
+
 .container {
-    max-width: 700px;
-    margin: 0 auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #004488;
+    font-size: 24px;
 }
 
-/* Estilos de formulario */
+
 form {
-    display: grid;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
+
 
 label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #555;
 }
 
-input, select {
-    width: 100%;
+
+input[type="number"],
+input[type="text"],
+select {
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
+
+
+button, .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
 
 fieldset {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
 }
 
 legend {
-    font-weight: 500;
-    padding: 0 10px;
+    font-weight: bold;
+    color: #555;
 }
 
-/* Calendario */
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 8px;
-    margin-top: 10px;
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.day {
+th, td {
     padding: 10px;
-    border: 1px solid #ddd;
-    background: white;
-    cursor: pointer;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
 }
 
-.day.selected {
-    background: #3498db;
-    color: white;
-    border-color: #3498db;
+th {
+    background-color: #E0E6EF;
+    font-weight: bold;
 }
 
-/* Botón */
-.btn {
-    background: #3498db;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+td input[type="checkbox"] {
+    transform: scale(1.2);
 }
-
-.btn:hover {
-    background: #2980b9;
-}
-
-/*css index

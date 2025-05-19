@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #F0F0F0; /* Color hueso */
+    color: #002244; /* Azul oscuro para el texto */
+}
+
+h1 {
+    color: #004488; /* Azul más vibrante para los títulos */
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50; /* Verde para los botones */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+form {
+    display: inline-block;
+}
