@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['materia_id'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Asesor&iacute;as Acad&eacute;micas</title>
-    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="css/style_index.css">
 </head>
 <body>
     <div class="container">
