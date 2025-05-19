@@ -9,13 +9,8 @@
 
     <h1>Asesorias CUCEA</h1>
     <h1>Bienvenido</h1>
-    <form action="registro.php" method="get" style="display: inline;">
-        <button type="submit">Registro de asesor</button>
-    </form>
-
-    <form action="mostrarhorario.php" method="get" style="display: inline;">
-        <button type="submit">Mostrar Horario</button>
-    </form>
+    <button onclick="window.location.href='./registro.php'" class="btn">Registro de asesor</button>
+    <button onclick="window.location.href='./mostrarhorario.php'" class="btn">Mostrar horarios</button>
 
 </body>
 </html>
