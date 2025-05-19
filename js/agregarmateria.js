@@ -26,7 +26,7 @@
             texto.textContent = nombre + " (ID: " + id + ")";
 
             const botonEliminar = document.createElement("button");
-            botonEliminar.classList.add = "btn-eliminar";
+            botonEliminar.className += "btn-eliminar";
             botonEliminar.textContent = "Eliminar";
             botonEliminar.onclick = function() {
                 eliminarMateria(id, li);
