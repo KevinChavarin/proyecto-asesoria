@@ -9,7 +9,7 @@
 
     <h1>Asesorias CUCEA</h1>
     <h1>Bienvenido</h1>
-    <button onclick="window.location.href='./registro.php'" class="btn">Registro de asesor</button>
+    <button onclick="window.location.href='./Registro.php'" class="btn">Registro de asesor</button>
     <button onclick="window.location.href='./mostrarhorario.php'" class="btn">Mostrar horarios</button>
 
 </body>
